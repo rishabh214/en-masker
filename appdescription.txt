@@ -1,0 +1,22 @@
+INTRODUCTION-
+
+The name of my Web-app is En-masker, It is an AI-based platform designed to make sure that people use face masks in order to flatten the curve of the corona. Its implementation can impel employees (especially cab drivers and billing counter workers) to use face masks continuously. This app provides a surveillance method to detect face masks on employees on a stream of images. It means that the app will use a webcam or mobile's camera to click pictures at a random intervals (approx 10 seconds, the interval can be increased or decreased as per choice) and then the program will process that picture to detect whether the person in the picture is using a face mask or not, the result will be displayed on the web page. The result will contain the original image captured by camera and a bounding box will be drawn around the face in that image along with a label containing the message "MASK/NO MASK" will be shown with confidence percentage of detection. I have also added the feature of sending alerts to a whatsapp number. If an employee is detected working without a mask then the app will send a personalized alert message to his/her supervisor. The message will be sent instantly to the supervisor, containing employee name/ID for clear identification.
+
+
+The app also has an additional module called 'Mask Checker' that will allow users to upload images from their file-system in order to check whether the face in the uploaded image is wearing a mask or not . If no face is detected in the uploaded image the program will display 'NO FACE DETECTED'.
+The back-end process of both the modules is very similar, the difference lies in the way of inputting images to the program. In this module images are uploaded by the user whereas in 'Mask Monitor' module images are captured from webcam/camera.
+
+
+The front-end of the website is developed in HTML, CSS, Bootstrap and JavaScript. The back-end code is written in Python language and Flask framework is used. This is a responsive website which means it is compatible with mobiles, tablets and computers
+
+
+TARGET GROUP AND USES-
+
+1. TAXI/CAB DRIVERS- Nowadays Claims made by cab companies are that their drivers upload a picture with a mask once every day. This method does not ensure that the driver is using the mask continuously. The driver may pretend to use a mask only when he clicks the picture. My app can monitor Driver to make sure he/she uses face mask continuously
+Cab Drivers keep their mobile in front of them to use google maps for navigation. Similarly, our app will run in the background and monitor whether the driver is continuously using a mask or not. It will alert his/her Supervisor when he/she is not wearing a mask. 
+
+
+2. SUPERMARKETS & BIG CHAINS - This app can be used in supermarkets like 'Big Bazaar' or 'Reliance mart' and in big chains like 'Apollo pharmacy' or 'Burger king' to make sure that workers at the billing counter always wear a mask. They always generate bills using computers. We can run our app in the background on those computers and monitor those workers for face masks. If a worker is not wearing a mask his/her manager will be alerted via whatsapp message.
+
+
+3. SCREENING IN HOSPITALS AND OFFICES - The app is mainly designed for the above 2 target groups but with some modification in source code, we can provide a way to screen people entering hospitals, offices or any other building. We can make sure that access to the building will only be given to people who are wearing face masks.   
